@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@/core/*": ["core/*"]
+    },
+    "target": "ES2020",
+    "module": "commonjs",
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": "./src",
+    "typeRoots": ["./node_modules/@types", "./src/core/types", "./src/types"],
+    "strict": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "removeComments": true,
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true, // This is the important part for the import statement to work correctly in Node.js with JSON files
+    "alwaysStrict": true,
+    "strictPropertyInitialization": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "noUnusedLocals": false,
+    "declaration": true,
+    "noFallthroughCasesInSwitch": true, // Enforce a check for fallthrough cases in switch statements
+    "noImplicitOverride": true, // Ensure overriding members in derived classes are marked with an override modifier
+    // Ensure that Transpiler can safely transpile files in the TypeScript project
+    "isolatedModules": true,
+    "noImplicitReturns": true,
+    "noUncheckedIndexedAccess": true,
+    "useUnknownInCatchVariables": true,
+    "inlineSources": true,
+    "useDefineForClassFields": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "noImplicitThis": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist", "eslint.config.js"]
+}

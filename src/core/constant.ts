@@ -1,0 +1,3 @@
+export const METADATA_TOKEN_KEY = '__METADATA_TOKEN_KEY__'
+export const INJECT_CLASS_METADATA_KEY = '__INJECT_CLASS_METADATA_KEY__'
+export const CONSTRUCTOR_PARAM_METADATA_KEY = 'design:paramtypes'
